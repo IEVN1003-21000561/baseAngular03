@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-heroeslist',
   standalone: false,
-  templateUrl: './heroeslist.component.html',
+  templateUrl: './heroeslist.component.html'
   //styleUrl: './heroeslist.component.css'
 })
 export class HeroeslistComponent {
@@ -12,15 +12,13 @@ export class HeroeslistComponent {
   imageMargin:number=2;
   showImage:boolean=true;
   listFilter:string='';
+  muestraImage: boolean=true;
 
-  showImage():void{
+  showImagee():void{
     this.muestraImage=!this.muestraImage;
   }
 
-
-  export class app-heroeslist{
-
-    heroes:any[]=[
+    heroes:Iheroes[]=[
     {
       imagen:"https://dragonball-api.com/transformaciones/vegeta mega instinto.webp",
       nombre:"vegeta",
@@ -29,7 +27,7 @@ export class HeroeslistComponent {
       ki:9500
     },
     {
-      imagen:"https://dragonball-api.com/planetas/Tierra_Dragon_Ball_Z.webp"
+      imagen:"https://dragonball-api.com/planetas/Tierra_Dragon_Ball_Z.webp",
       nombre:"Bulma",
       descripcion:"Ninguno",
       race:"Humana",
@@ -37,5 +35,6 @@ export class HeroeslistComponent {
     }
     ]
   }
-}
+
+
 

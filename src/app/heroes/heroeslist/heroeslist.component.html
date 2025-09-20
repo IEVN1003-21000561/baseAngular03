@@ -31,7 +31,7 @@
         </thead>
          <tr>
                 <tbody>
-                <tr *ngFor="let heroe of heroes">
+                <tr *ngFor="let heroe of heroes | heroFilte:listFilter">
                 <td>
                     <img *ngIf="muestraImage" [src]="heroe.imagen"
                     [style.width.px]="imageWidth"
