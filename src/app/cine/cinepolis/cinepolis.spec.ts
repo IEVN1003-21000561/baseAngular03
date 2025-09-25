@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OperasBasComponent } from './operas-bas.component';
+import { Cinepolis } from './cinepolis';
 
-describe('OperasBasComponent', () => {
-  let component: OperasBasComponent;
-  let fixture: ComponentFixture<OperasBasComponent>;
+describe('Cinepolis', () => {
+  let component: Cinepolis;
+  let fixture: ComponentFixture<Cinepolis>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [OperasBasComponent]
+      declarations: [Cinepolis]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(OperasBasComponent);
+    fixture = TestBed.createComponent(Cinepolis);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
