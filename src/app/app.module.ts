@@ -5,22 +5,19 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
-import { Cinepolis } from './cine/cinepolis/cinepolis';
+
+import { Ohms1Component } from './Ohms/ohms.component/ohms1.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    Cinepolis 
-   
+    Ohms1Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    CommonModule, 
-    FormsModule,
-    
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

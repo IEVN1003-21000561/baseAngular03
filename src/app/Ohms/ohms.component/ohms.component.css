@@ -1,0 +1,49 @@
+.container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.bandas {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.banda {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.opcion {
+  display: flex;
+  align-items: center;
+  margin: 3px 0;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  margin: 0 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.resultado table {
+  margin: auto;
+  margin-top: 20px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.resultado th, .resultado td {
+  padding: 10px;
+}
