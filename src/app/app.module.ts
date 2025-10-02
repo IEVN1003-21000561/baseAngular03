@@ -6,12 +6,18 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 import { Cinepolis } from './cine/cinepolis/cinepolis';
+import { Ohms } from './Ohms/ohms/ohms';
+import { OhmsComponent } from './Ohms/ohms.component/ohms.component';
+import { Calculadora } from './calculadora/calculadora/calculadora';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    Cinepolis 
+    Cinepolis,
+    Ohms,
+    OhmsComponent,
+    Calculadora 
    
   ],
   imports: [
