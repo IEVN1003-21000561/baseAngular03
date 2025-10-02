@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Cinepolis } from './cine/cinepolis/cinepolis';
 
+
+import { Ohms1Component } from './Ohms/ohms.component/ohms1.component';
 
 
 const routes: Routes = [
-  { path: 'Cinepolis', component: Cinepolis }
+
+  { path: 'ohms1', component: Ohms1Component },
+
 ];
 
 @NgModule({

@@ -1,0 +1,68 @@
+<div class="container">
+  <h2>Calculadora de Resistencias</h2>
+
+
+  <div class="bandas">
+    <div class="banda">
+      <h4>1ra. Banda</h4>
+      <div *ngFor="let c of colores" class="opcion">
+        <input type="radio" name="banda1" [value]="c" [(ngModel)]="banda1">
+        <div class="color-box" [style.background]="c.hex"></div>
+        <span>{{c.valor}}</span>
+      </div>
+    </div>
+
+    <div class="banda">
+      <h4>2da. Banda</h4>
+      <div *ngFor="let c of colores" class="opcion">
+        <input type="radio" name="banda2" [value]="c" [(ngModel)]="banda2">
+        <div class="color-box" [style.background]="c.hex"></div>
+        <span>{{c.valor}}</span>
+      </div>
+    </div>
+
+    <div class="banda">
+      <h4>3ra. Banda<br>(Multiplicador)</h4>
+      <div *ngFor="let c of colores" class="opcion">
+        <input type="radio" name="banda3" [value]="c" [(ngModel)]="banda3">
+        <div class="color-box" [style.background]="c.hex"></div>
+        <span>×{{c.multiplicador}}</span>
+      </div>
+    </div>
+
+    <div class="banda">
+      <h4>Tolerancia</h4>
+      <div *ngFor="let t of tolerancias" class="opcion">
+        <input type="radio" name="tolerancia" [value]="t" [(ngModel)]="tolerancia">
+        <div class="color-box" [style.background]="t.hex"></div>
+        <span>{{t.nombre}}</span>
+      </div>
+    </div>
+  </div>
+
+  <button (click)="calcular()">Calcular</button>
+
+  
+  <div *ngIf="resultado !== null" class="resultado">
+    <table border="1">
+      <tr>
+        <th>Color1</th>
+        <th>Color2</th>
+        <th>Color3</th>
+        <th>Tolerancia</th>
+        <th>Valor</th>
+        <th>Valor máximo</th>
+        <th>Valor mínimo</th>
+      </tr>
+      <tr>
+        <td [style.background]="banda1.hex">{{banda1.nombre}}</td>
+        <td [style.background]="banda2.hex">{{banda2.nombre}}</td>
+        <td [style.background]="banda3.hex">{{banda3.nombre}}</td>
+        <td [style.background]="tolerancia.hex">{{tolerancia.nombre}}</td>
+        <td>{{resultado}}</td>
+        <td>{{valorMax}}</td>
+        <td>{{valorMin}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
